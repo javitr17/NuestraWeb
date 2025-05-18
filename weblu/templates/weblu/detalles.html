@@ -1,0 +1,334 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="cabecera" id="cabeceraDetalles">
+        <div class="izq">
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path fill="currentColor" d="M258.25 19.594c-76.095.492-152.275 42.48-171.844 139.812c-2.706 13.46.208 22.172 7.406 30.063c6.18 6.774 16.286 12.65 29.313 17.155c8.87-6.015 17.417-19.395 20.47-34.156c1.136 15.568 7.102 33.066 17.28 42.53c12.807 1.726 26.597 2.752 40.78 3.188C205.5 123.968 313.99 114.71 323.22 208.5c11.655-2.437 22.868-5.327 33.28-8.656c11.107-15.656 7.692-26.07 5.03-41c8.16 11.035 11.332 22.095 28.314 27.25c9.952-5.37 18.034-11.312 23.687-17.5c8.163-8.936 11.494-17.695 9.97-28.47c-10.676-75.457-84.34-119.695-161.625-120.53a209 209 0 0 0-3.625 0zm-29.22 23.093c24.367 0 44.126 19.73 44.126 44.094c0 24.367-19.76 44.126-44.125 44.126c-2.338 0-4.633-.18-6.874-.53c-3.684 14.55-16.865 25.343-32.562 25.343c-18.552 0-33.594-15.044-33.594-33.595c0-16.984 12.604-31.03 28.97-33.28c-.032-.682-.032-1.375-.032-2.064c0-24.365 19.727-44.093 44.093-44.093zm95.345 55.97c10.8 0 19.563 8.764 19.563 19.562c0 10.797-8.764 19.53-19.563 19.53c-10.8 0-19.53-8.733-19.53-19.53c0-10.8 8.73-19.564 19.53-19.564zm77.156 102.312c-5.32 3-11.025 5.787-17.03 8.374c12.71 15.545 19.88 34.71 22.75 54.25c4.855 33.055-4.353 66.41-16.813 78.97c-24.31 24.5-30.547 57.464-23.125 88.248c5.573 23.115 18.495 45.298 36.938 63.407h29.03c-24.623-17.53-41.752-42.65-47.81-67.783c-6.2-25.704-1.406-50.908 18.25-70.718c19.685-19.842 27.573-57.107 22.03-94.845c-3.062-20.85-10.79-42.05-24.22-59.906zm-41.06 17.25c-5.997 1.886-12.2 3.595-18.533 5.186c8.91 16.314 14.04 30.545 15.625 43.063c2.682 21.173-3.548 38.124-20.187 56.592c-23.118 25.66-24.01 54.512-27.563 82.625c-3.5 27.702-9.055 55.82-38.812 88.532h24.344c23.8-31.292 29.794-60.816 33-86.19c3.687-29.18 4.24-51.718 22.906-72.436c19.127-21.23 28.188-45.065 24.844-71.47c-1.838-14.506-7.098-29.6-15.625-45.905zm-39.75 9.905c-21.83 4.216-44.707 6.853-67.033 8.03c-16.476.87-33.335 1.24-49.875.845c-14.306 14.035-26.07 29.54-33.78 45.813c-12.875 27.174-13.776 57.767 5.562 82.812c.295.382.57.788.844 1.188c-10.236 6.08-21.41 11.5-33.25 16.75c-23.037 10.21-48.35 19.324-72.813 31.125c6.505-27.637 17.068-49.704 29.188-62.063c16.996-17.333 35.44-32.76 46-57.844c6.838-16.245 9.966-35.98 7.75-61.905a248 248 0 0 1-19.094-3.72c2.97 26.23.066 44.26-5.876 58.376c-8.568 20.355-24.4 33.955-42.125 52.033c-18.482 18.845-31.744 49.66-37.814 86.75c-9.37 5.463-18.45 11.502-27.062 18.406v24.936c7.454-7.247 15.6-13.632 24.25-19.406c-1.067 14.096-1.178 28.833-.22 43.97h18.75c-1.257-19.685-.448-38.66 1.94-56.158c26.77-14.288 56.505-24.9 84.717-37.406c10.524-4.664 20.864-9.69 30.72-15.375c-.125 10.524-4.077 23.175-12.344 37.19c-14.266 24.18-40.91 50.666-77.344 71.75h34.344c26.386-19.128 46.457-40.83 59.094-62.25c11.775-19.96 17.327-40.537 13.906-58.095c21.25-15.403 38.72-35.33 48.28-63.47c9.112 1.75 18.513.996 25.314-2.124c.256-.116.5-.252.75-.374c-7.986 68.863-42.73 137.217-112.313 186.313h30.72c69.553-58.027 100.686-136.855 102.03-213.033c18.65-7.55 31.337-26.797 26.782-53.062zM211.75 255.72c1.172 3.966 3.024 7.484 5.375 10.718l2.938 4.03l-1.72 4.688c-3.335 9.118-1.49 15.308 3.5 21.375c2.123 2.58 4.95 4.976 8.25 7.064c-7.543 23.296-20.897 39.753-38.124 52.844a47 47 0 0 0-1.595-2.22c-14.877-19.267-14.336-40.467-3.47-63.406c5.618-11.855 14.223-23.8 24.845-35.093z"/></svg></div>
+            <a href="{% url 'principal' %}">NUESTRA WEB</a>
+        </div>
+        <div class="der">
+            <a href="{% url 'galeria' %}">GALERÍA</a>
+            <a href="{% url 'detalles' %}" style="text-decoration: underline;">DETALLES</a>
+            <a href="{% url 'musica' %}">MÚSICA</a>
+            <a href="{% url 'eventos' %}">EVENTOS</a>
+        </div>
+    </div>
+    <div class="dseccion1">
+        <div class="ds1titulos">
+            <div class="ds1titulopequeño">Te amo</div>
+            <div class="ds1titulogrande">Lucía</div>
+        </div>   
+    </div>
+    <div class="dseccion2">
+        <style>
+            @import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap);
+        
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+        }
+        .dseccion2{
+            font-family: "Quicksand", sans-serif;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 1rem;
+            -webkit-tap-highlight-color: transparent;
+            
+          }
+        .envelope {
+            --duration: 1000ms;
+        
+            --shadow-width: calc(var(--envelope-width) * 0.85);
+            --shadow-blur: 15px;
+        
+            --envelope-width: 300px;
+            --envelope-height: 175px;
+            --envelope-clr-bg: #3F0A29;
+            --envelope-clr-bg-side: #3F0A29;
+            --envelope-clr-bg-bottom: #3F0A29;
+            --envelope-clr-bg-top: #3F0A29;
+            --envelope-clr-txt: #fff;
+        
+            /*--envelope-transform: rotateY(0deg);*/
+            --envelope-transform-hover: rotateY(180deg);
+            --evelope-rotate-delay: calc(var(--duration) / 1);
+            --evelope-rotate-delay-hover: 0ms;
+        
+            --letter-clr-bg: #fff;
+            --letter-clr-text: #110c0c;
+            --letter-font-size: 1rem;
+            --letter-delay: 0ms;
+            --letter-delay-hover: calc(
+                var(--duration) * 1.25
+            ); /* delay before revealing card */
+        
+            --letter-height: calc(var(--envelope-height) - 2rem);
+            --letter-height-hover: calc(var(--envelope-height) * 2.42);
+        
+            --fold-rotate: rotateX(0deg);
+            /*--fold-zindex: 10;*/
+            --fold-zindex-hover: 0;
+            --fold-rotate-hover: rotateX(180deg);
+            --fold-delay: calc(var(--duration) / 2); /* delay before opening top section */
+            --fold-delay-hover: calc(var(--duration) * .75);
+        
+            --front-font-size: 1rem;
+            --snowman-width: 50px;
+            --bells-width: 30px;
+        
+            position: relative;
+            height: var(--envelope-height);
+            width: var(--envelope-width);
+            perspective: 1000px;
+            cursor: pointer;
+        }
+        
+        @media (min-width: 720px) {
+            .envelope {
+                --envelope-width: 600px;
+                --envelope-height: 350px;
+                --letter-font-size: 1.6rem;
+                --snowman-width: 130px;
+                --bells-width: 60px;
+                --front-font-size: 1.25rem;
+            }
+        }
+        /* shadow */
+        .envelope::after {
+            content: "";
+            position: absolute;
+            top: 110%;
+            left: 50%;
+            width: var(--shadow-width);
+            height: 40px;
+            transition: var(--duration) ease-in-out;
+            transition-delay: var(--evelope-rotate-delay);
+            transform: var(--shadow-transform);
+            translate: -50% 0;
+            border-radius: 50%;
+            background: rgba(56, 6, 6, 0.4);
+            filter: blur(var(--shadow-blur));
+        }
+        
+        .envelope:hover {
+            --envelope-transform: var(--envelope-transform-hover, 0deg);
+            --evelope-rotate-delay: var(--evelope-rotate-delay-hover);
+            --shadow-transform: rotateY(180deg);
+            --fold-rotate: var(--fold-rotate-hover);
+            --fold-delay: var(--fold-delay-hover);
+            --fold-zindex: var(--fold-zindex-hover);
+            --letter-height: var(--letter-height-hover);
+            --letter-delay: var(--letter-delay-hover);
+        }
+        
+        .envelope-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        
+            transition: var(--duration) ease-in-out;
+            transition-delay: var(--evelope-rotate-delay);
+            transform-style: preserve-3d;
+            transform: var(--envelope-transform);
+            display: grid;
+        }
+        
+        .envelope-front,
+        .envelope-back {
+            position: relative;
+            grid-area: 1/1;
+            width: 100%;
+            height: 100%;
+            background-color: var(--envelope-clr-bg);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            perspective: 1000px;
+            isolation: isolate;
+        }
+        
+        .envelope-front {
+            color: var(--envelope-clr-txt);
+            display: grid;
+            place-content: center;
+        }
+        .envelope-front .postage-stamp {
+            position: absolute;
+            top: 1em;
+            right: 0.5em;
+            width: 15%;
+        }
+        .envelope-front .address {
+            text-align: left;
+            font-size: var(--front-font-size);
+        }
+        .envelope-front .address > p > span:first-child {
+            color: #BD9696;
+            font-weight: 200;
+        }
+        .envelope-front .address > p > span:last-of-type {
+            font-weight: 400;
+        }
+        
+        .envelope-back {
+            /* start with back rotated*/
+            transform: rotateY(180deg);
+        }
+        /* back folds */
+        .envelope-back::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 3;
+            background-image: conic-gradient(
+                transparent 60deg,
+                var(--envelope-clr-bg-side) 60deg 120deg,
+                var(--envelope-clr-bg-bottom) 120deg 240deg,
+                var(--envelope-clr-bg-side) 240deg 300deg,
+                transparent 300deg
+            );
+        }
+        /* top fold which folds up on hover */
+        .envelope-back .top-fold {
+            position: absolute;
+            inset: 0;
+            z-index: var(--fold-zindex, 10);
+            background-color: var(--envelope-clr-bg-top);
+            clip-path: polygon(0% 0%, 50% 55%, 100% 0%);
+        
+            transform: var(--fold-rotate);
+            transform-origin: top;
+            transition: var(--duration) ease-in-out;
+            transition-delay: var(--fold-delay);
+        }
+        
+        .letter {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            width: 90%;
+            height: var(--letter-height);
+            font-size: var(--letter-font-size);
+            transform: translateX(-50%);
+            background: var(--letter-clr-bg);
+            z-index: 2;
+            padding: 2em 3em;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            text-align: center;
+            transition: var(--duration) ease-in-out;
+            transition-delay: var(--letter-delay);
+            overflow: hidden;
+        }
+        .letter > svg.snowman {
+            width: var(--snowman-width);
+        }
+        .letter svg.bells {
+            width: var(--bells-width);
+            color: rgb(22, 19, 14);
+        }
+        .letter p {
+            margin: 0 0 0.1rem 0;
+            font-weight: bold;
+            width: 100%;
+            color: black;
+            font-size: 12px;
+            text-align: justify;
+        }
+        
+        .custom-image {
+            width: 100px;
+            height: 100px;
+            object-fit: contain; 
+        }
+        .custom-image2 {
+            width: 150px;
+            height: 150px;
+            object-fit: contain; 
+        }
+        
+        .highlight {
+            display: block; 
+            margin-top: 10px; 
+            font-size: 1.8rem;  
+            font-weight: bold; 
+        }
+        
+        </style>
+        <div class="envelope">
+        
+            <div class="envelope-inner">
+        
+                <div class="envelope-front">
+        
+                    <div class="postage-stamp ">
+                        <svg fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" xml:space="preserve">
+                            <path d="M253.98,257.652c0-8.568,8.568-17.748,17.136-18.361c-1.224-4.895-1.224-10.402-0.611-15.299 c-3.061,0.611-7.345,0-10.404-1.225c-6.12-3.061-9.792-9.18-9.792-15.912c0-9.18,7.956-20.807,17.136-21.42 c0-2.447,0.612-4.896,0.612-7.344s0.612-4.896,0.612-7.344c-7.956,3.061-17.137-4.283-18.973-12.24 c-1.836-9.792,4.284-17.748,12.853-21.42c-0.612-1.836-0.612-4.284-0.612-6.12c0-3.672,0-7.344,0.612-11.016 c-3.061,0-6.12-1.224-9.181-3.06c-4.283-3.06-6.731-7.344-7.344-12.24c0-0.612,0-1.836,0-2.448c0-9.792,8.568-15.3,17.136-16.524 c-0.611-3.672,0-7.956,0-11.628c0-3.06,0-6.12,0.612-9.18c-7.956,2.448-18.36-4.284-20.808-12.24 c-2.448-7.956,1.836-17.748,9.792-20.808c-1.225-3.06-1.225-6.732-1.225-10.404c0-3.06-0.611-6.732-0.611-9.792 c-9.792,12.24-39.168,4.284-40.393-9.18C205.632,3.672,200.124,1.836,195.84,0c0.611,9.18-7.956,17.748-17.137,17.748 c-9.18,0-16.523-6.732-18.359-15.3c-2.448,0-4.896,0-6.732-0.612c-2.448,0-4.896-0.612-7.956-1.224c0,4.284-2.448,9.18-5.508,12.24 c-3.672,3.672-9.18,6.12-14.076,6.12c-1.224,0-2.448,0-3.672-0.612c-5.508-1.224-12.24-4.896-14.076-11.016 c0-0.612,0-0.612,0-1.224c-4.896,0.612-11.016-0.612-15.912-2.448c-0.612,8.568-9.18,15.3-18.36,14.076 c-4.284-0.612-9.792-3.06-11.016-7.344c0-0.612,0-0.612,0-1.224c0,0,0,0.612-0.612,0.612c-3.672,3.06-8.568,2.448-12.852,1.836 c-1.224,0-2.448,0-3.672,0c1.224,0.612,1.836,1.836,2.448,2.448c3.672,4.896,5.508,11.016,3.06,17.136 c-3.06,8.568-14.076,12.24-22.032,9.18c0,1.224-0.612,1.836-0.612,3.06c-0.612,3.672-0.612,6.732-0.612,10.404 c9.792-1.224,22.644,1.224,23.868,12.852c0.612,5.508-3.06,11.016-8.568,12.852c-2.448,1.224-5.508,1.224-7.956,1.224 c-0.612,0-1.224,0-2.448-0.612c0,1.836,0,4.284,0,6.12c0,3.672,0.612,7.344-0.612,11.016l0,0c0.612,0,0.612-0.612,1.224-0.612 c11.628-3.672,23.256,7.344,19.584,18.972c-1.224,4.896-5.508,8.568-9.792,10.404c-3.672,1.224-6.732,1.836-10.404,1.836 c-0.612,1.836-0.612,3.06-1.224,4.896c-0.612,2.448-0.612,5.508-0.612,7.956c8.568-4.284,22.032-1.836,22.644,9.18 c0.612,9.179-10.404,24.48-21.42,23.869c0,1.223,0,3.059,0,4.283c0,2.447-0.612,4.896-0.612,7.957 c2.448-1.225,6.12-1.836,9.18-1.836c6.12,0.611,11.016,4.895,12.24,11.016c3.672,13.463-9.18,22.643-20.808,20.807 c-0.612,4.285-1.224,9.793-1.836,13.465c5.508-4.283,17.748-3.061,21.42,4.283c8.568,15.912-8.568,25.705-22.032,28.152 c0,4.896,0,10.404-1.224,15.301c7.344-4.285,18.36-4.285,25.704,0c7.956,4.896,11.628,13.463,11.628,22.031 c3.672-0.611,7.344-1.223,11.016-1.223c0-8.568,9.18-20.197,16.524-20.809c4.896-0.613,9.792,2.447,11.628,7.344 c1.836,4.283,1.224,9.791,3.06,14.076c0.612,0,1.224-0.611,1.836-0.611c3.06,0,4.896-0.613,7.344-1.838 c-0.612-1.836,0-3.672,0.612-6.119c1.224-4.896,5.508-9.18,10.404-10.404c11.016-3.061,19.584,4.896,22.645,14.688 c3.672-0.611,7.344-0.611,11.628-0.611c1.836,0,3.672,0,5.508,0.611c-2.448-8.566,4.284-18.971,13.464-19.584 c0.612,0,1.224,0,1.836,0c5.508,0,10.404,3.061,13.464,6.732c1.836,2.449,3.672,5.508,4.284,8.568c1.224,0,2.448,0,4.284,0 s3.672,0,5.508,0c1.224-7.955,9.792-14.076,17.748-14.688c7.956-0.613,15.912,3.672,19.584,11.016 c5.508-3.672,13.464-6.119,20.808-6.119c0-2.449,0-4.896,0-7.957C261.936,273.564,253.98,264.996,253.98,257.652z M243.576,266.221 c0,4.283-6.12,4.283-6.12,0l0,0c-3.672-77.725-4.896-155.449-9.792-233.173c-0.611,0.612-1.224,0.612-2.447,0.612 c-52.633,0-105.264,1.836-157.896,1.836c0,0,0,0-0.612,0c6.732,15.3,3.06,41.616,3.06,57.528c0,17.748,0,35.496,0,53.856 c0,39.78,0,79.56-1.224,119.341c0,1.836-1.224,3.059-2.448,3.672c50.796-12.854,115.668-14.076,167.688-6.732 c1.836,0.611,3.061,1.836,3.061,3.672s-1.225,4.283-3.672,4.896c-15.912,0.611-31.824,0.611-47.736,0.611 c-12.852,0-25.704,0-39.168,0.611c-26.316,1.225-53.856,4.285-79.56,0.613c-1.836,0-1.836-3.061,0-3.672 c-2.448,1.223-6.732,0-6.12-3.672c1.224-76.5-1.836-154.225,3.06-230.725c0-2.448,0-4.896,0.612-7.344c0-3.06,4.284-3.06,4.284,0 c0,0.612,0,1.224,0,1.224c19.584-2.448,39.168-3.672,59.364-4.896c33.048-1.224,66.097-1.224,98.532-0.612 c1.224,0,2.448,0.612,3.06,1.224c1.837-2.448,6.732-1.836,7.345,2.448c2.447,25.704,4.896,51.408,6.12,77.112 C244.8,158.508,246.024,212.977,243.576,266.221z M152.388,192.168c-3.06,1.836-6.732-0.611-7.344-3.061l0,0c0,0,0,0-0.612-0.611 c-30.6-7.957-63.036-45.9-55.692-77.112c3.06-12.852,15.3-26.316,29.988-22.032c12.852,3.672,22.032,19.584,28.152,32.436 c6.12-15.3,16.524-34.272,30.6-40.392c11.628-4.896,22.644,0,27.54,11.628C219.708,127.908,178.704,174.42,152.388,192.168z"></path>
+                        </svg>
+                    </div>
+        
+                    <div class="address">
+                        <p><span>De:</span> <span>Cateto</span></p>
+                        <p><span>Para:</span> <span>Mi persona favorita, Luchi</span></p>
+                    </div>
+        
+                </div>
+        
+                <div class="envelope-back">
+                    <div class="top-fold"></div>
+        
+                    <div class="letter">
+        
+                        
+                    
+                        <p>Querida luci, he querido hacerte este detallito, que aunque no sea algo físico y palpable, lo he hecho con toda mi ilusión y esfuerzo para demostrarte lo mucho que te quiero y lo que significas para mi. Quería que fuera algo distinto y especial, quería que te sintieras así, como algo tan especial e importante como en lo que te has convertido tu en mi vida.</p>
+
+                           <p>Me siento en deuda contigo por todo lo que has hecho por mi y por todo los que sigues haciendo a diario. Me has enseñado el significado de querer, y como es que te quieran, el querer hacer las cosas bien desde el principio, tener a alguien que me apoya y me saca una sonrisa en los días más difíciles, tener a una personita con quien celebrar mis logros y que se alegra de ello más que yo mismo, me has hecho ver que a veces en lugar de usar la razón, la propia razón la tiene el corazón…</p>
+                            
+                            <p>Me has hecho quererte por encima de todo y amar todo de ti: desde tu carácter, pasando por tus ojitos marrones o tu sonrisa, hasta tu afán por los libros. Eres la luz de mi vida, tu mirada clavada en mis ojos junto con tu sonrisa es capaz de curar todos mis males y hacer que me olvide de todos mis problemas. Tus detallitos reviven esa sensación dentro de mi que vivía el pequeño javi de 5 añitos esos 6 de eneros por la mañana. Tu cariño y amor apagan mis inseguridades, me ayudan a quererme a mi mismo y me hacen sentir especial e importante constantemente.</p>
+                            
+                            <p>Para irme despidiendo porque no tengo más espacio en la carta rara esta jeje, quería acabar dándote las gracias por todo, me siento muy afortunado de tener a una niña tan increíble a mi lado. Por fin llegó esa personita a mi vida que todos decían que me merecía (y ahora no se si te merezco yo a ti :v). Te amo mi niña, por un futuro a tu lado :)</p>
+                    
+                        
+                        <img src="https://img.freepik.com/fotos-premium/imagen-flores-amarillas-palabras-sol-citadas-ella_1191871-60686.jpg" alt="love2" class="custom-image2">
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </div>
+        <!-- partial -->
+         
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4704501585981299"
+             crossorigin="anonymous"></script>
+        
+        <script>
+            document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+          });
+          
+          document.addEventListener('keydown', function (e) {
+            if (e.key === 'F12') {
+              e.preventDefault();
+            }
+            if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+              e.preventDefault();
+            }
+            if (e.ctrlKey && e.key === 'u') {
+              e.preventDefault();
+            }
+          });
+        </script>
+    </div>
+    <div class="dseccion3">
+        <div class="ds3texto">~Te quiero de aquí al mar a saltitos de medusa.</div>
+    </div>
+
+{% endblock %}

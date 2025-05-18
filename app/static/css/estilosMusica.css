@@ -1,0 +1,124 @@
+.mseccion1{
+    height: 700px;
+    width: 100%;
+    background-image: url("../img/quevedorosa.png");
+    background-position: top; /* Posiciona la imagen en la parte superior */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 67.4px;
+}
+
+.ms1interior{
+    width: 100%;
+    height: 700px;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.ms1interior img{
+    width: 434px;
+    height: 302px;
+    transition: filter 0.3s ease-in-out;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+
+}
+.ms1interior img:hover{
+    filter: drop-shadow(15px 15px 30px rgba(0, 0, 0, 0.8));
+    transform: scale(1.01);
+
+}
+.ms1texto{
+    max-width: 350px;
+    color: #BD9696;
+}
+
+.ms1texto div:nth-child(1){
+    font-size: 26px;
+    font-style: italic;
+    padding-bottom: 1rem;
+    color: #FFFFFF;
+}
+
+.ms1texto div:nth-child(2){
+    font-size: 18px;
+}
+
+.mseccion2{
+    background: linear-gradient(to bottom, #260518, #1C0412);
+    height: 1000px;
+    width: 100%;
+    color: #FFFFFF;
+   
+}
+
+.ms2titulo1{
+    font-size: 52px;
+    font-style: italic;
+    padding: 4rem 0rem 0rem 3rem;
+}
+
+.ms2titulo2{
+    font-size: 28px;
+    font-style: italic;
+    padding: 2rem 0rem 2rem 3rem; 
+}
+
+.ms2canciones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.ms2cancion{
+    width: fit-content;
+}
+
+.ms2cancion img{
+   width: 250px;
+   height: 250px; 
+   border-radius: 3px;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+   transition: transform 0.3s ease-in-out;
+}
+
+.ms2cancion img:hover{
+    transform: scale(1.02);
+
+}
+
+.ms2titulo_cancion, .ms2artista_cancion{
+    font-style: italic;
+}
+
+.ms2artista_cancion{
+    color: #DB90BE;
+}
+
+.mseccion3{
+    height: 810px;
+    width: 100%;
+    background-image: url("../img/relsrosa.png");
+    background-position: top; /* Posiciona la imagen en la parte superior */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ms3titulo{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 52px;
+    font-style: italic;
+    padding: 4rem 0rem 4rem 0rem;
+}
+
+.ms3playlist{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+.mseccion3 iframe{
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    height: 500px;
+}

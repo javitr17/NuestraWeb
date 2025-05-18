@@ -1,0 +1,164 @@
+.pseccion1{
+    background-image: url("../img/volteretarosa.png");
+    background-position: top; /* Posiciona la imagen en la parte superior */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    padding-top: 96.2px;
+}
+
+#cabeceraprincipal{
+    background-image: url("../img/volteretarosa.png");
+    background-position: top; /* Posiciona la imagen en la parte superior */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ps1interior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    gap: 10rem;
+}
+.ps1interior img{
+    width: 518.4px;
+    height: 524.8px;
+    object-fit: cover;
+    filter: drop-shadow(0px 0px 12px #1E0413);
+   
+
+}
+
+
+
+.ps1interior div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.ps1interior div:nth-child(2) div:nth-child(1){
+    color: #FFFFFF;
+    font-size: 52px;
+    font-style: italic;
+
+}
+
+.ps1interior div:nth-child(2) a{
+    padding: 0.7rem 2.3rem 0.7rem 3rem ;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.ps1interior div:nth-child(2) a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.ps1interior div:nth-child(2) a svg{
+    padding-left:0.5rem;
+    height: 20px;
+}
+
+
+.pseccion2{
+    background-color: #260518;
+    height: 910px;
+    width: 100%;
+}
+
+.ps2titulo{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 52px;
+    font-style: italic;
+    padding: 3rem 0rem 4rem 0rem;
+}
+.ps2rels, .ps2quevedo{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+
+}
+
+.p2cancion{
+max-width: 60%;
+}
+
+
+.ps2quevedo{
+    padding-top: 3rem;
+}
+.quevedoletra, .relsletra{
+    font-size: 26px;
+    color: #BD9696;
+    
+}
+
+.pseccion2 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 12px #1E0413);
+
+}
+
+.relsnombre, .quevedonombre{
+    color: #DB90BE ;
+    font-size: 36px;
+   
+}
+.relsnombre{
+    text-align: end;
+}
+
+.pseccion3{
+    width: 100%;
+    height: 540px;
+    background-color: #2D2929;
+}
+
+.ps3titulo{
+   
+    color: #FFFFFF;
+    font-size: 52px;
+    font-style: italic;
+    padding: 3rem 0rem 5rem 0rem;
+}
+.ps3interior{
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+}
+.pseccion3 a{
+ 
+    padding: 0.7rem 2.5rem 0.7rem 3rem ;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.pseccion3 a:hover{
+    background-color: #3a3535;
+}
+
+.pseccion3 a svg{
+    padding-left:0.5rem;
+    height: 20px;
+}
+
+.ps3contador{
+    color: #BD9696;
+    font-size: 76px;
+    padding-bottom: 5rem;
+}

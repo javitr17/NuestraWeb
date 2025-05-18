@@ -1,0 +1,84 @@
+
+*{
+font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  
+ 
+}
+
+.cabecera{
+  display: grid;
+  grid-template-columns:65% 35% ;
+  width: 100%;  
+  color: #FFFFFF;
+  background-color: #3F0A29 ;
+  position: fixed;
+  z-index: 1;
+ 
+ 
+}
+.cabecera div{
+    padding: 0.3rem 0.5rem 0.5rem 0.5rem;
+}
+
+.izq{
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+   
+    
+}
+
+.izq div svg{
+    width: 65px;
+    height: 65px;
+  
+  
+}
+
+.izq a{
+    font-size: 48px;
+    margin-top: 0.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.der{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1.5rem;
+    margin-top: 1.8rem;
+    font-size: 18px;
+}
+.der a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.footer{
+    background-color: #1C1A1A;
+    width: 100%;
+    align-items: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 100px;
+    font-size: 20px;
+}
+.footer i{
+    color: #BD9696;
+}
+.footer div{
+    background-color: #1C1A1A;
+}
+.footer div a,.footer div p{
+    background-color: #1C1A1A;
+}
+.footer div:nth-child(2), .footer div:nth-child(3){
+    display: flex;
+    gap: 0.5rem;
+
+
+}
