@@ -1,0 +1,53 @@
+#cabeceraDetalles{
+    background-image: url("../img/nomeolvidesrosa.png");
+    background-position: top; /* Posiciona la imagen en la parte superior */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dseccion1{
+    height: 800px;
+    width: 100%;
+    background-image: url("../img/nomeolvidesrosa.png");
+    background-position: top; /* Posiciona la imagen en la parte superior */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+}
+.ds1titulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+.ds1titulopequeño{
+    font-family: "Euphoria Script", cursive;
+    font-size: 62px;
+    padding-bottom: 8rem;
+}
+
+.ds1titulogrande{
+    font-family: "Euphoria Script", cursive;
+    font-size: 160px;
+}
+
+.dseccion2{
+    background: linear-gradient(to bottom, #260518, #1C0412);
+    height: 600px;
+    
+}
+
+.dseccion3{
+    height: 800px;
+    width: 100%;
+    background-image: url("../img/lurosa.png");
+    background-position: 50% 40%; /* Posiciona la imagen en la parte superior */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #BD9696;
+}
+
+.ds3texto{
+font-style: italic;
+font-size: 36px;
+padding: 7rem 4rem;
+}
